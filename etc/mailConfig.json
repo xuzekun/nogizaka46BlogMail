@@ -1,0 +1,8 @@
+{
+	"mailHost": "smtp.163.com",
+	"mailUser": "xxxx",
+	"mailPasswd": "xxx",
+	"sender": "xxxxx",
+	"receivers": ["xxxx"],
+	"cc" : ["xxxx","xxxx"]
+}

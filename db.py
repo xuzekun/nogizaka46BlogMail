@@ -5,7 +5,7 @@ import json
 
 class DB():
     def __init__(self):
-        with open('dbConfig.json','rb') as json_file:
+        with open('etc/dbConfig.json','rb') as json_file:
             try:
                 config = json.load(json_file)
                 self.host = config['host']
@@ -42,10 +42,11 @@ class DB():
         try:
             cursor.execute(cmd)
             results = cursor.fetchall()
+            return results
         except Exception, e:
             print e
 
-        return results
+
 
     def updatedb(self, cmd):
         cursor = self.db.cursor()
